@@ -11,6 +11,7 @@
         packages_to_be_installed:
           - 'vim-data'
           - 'hostname'
+          - 'golang-github-prometheus-node_exporter'
     - role: 'minimal_bashrc'
       vars:
         additional_users: "{{ ansible_user }}"
