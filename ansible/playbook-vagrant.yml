@@ -1,0 +1,19 @@
+---
+- name: 'Basic configuration for all nodes'
+  hosts: 'prometheus_nodes'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'zypper_ref_accept_keys'
+    - role: 'install_one_or_more_packages'
+      vars:
+        packages_to_be_installed:
+          - 'vim-data'
+          - 'hostname'
+    - role: 'minimal_bashrc'
+      vars:
+        additional_users: "{{ ansible_user }}"
+    - role: 'create_a_vimrc'
+      vars:
+        additional_users: "{{ ansible_user }}"
