@@ -18,3 +18,14 @@
     - role: 'create_a_vimrc'
       vars:
         additional_users: "{{ ansible_user }}"
+
+- name: 'Install prometheus server and configure it'
+  hosts: 'prometheus_servers'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'install_one_or_more_packages'
+      vars:
+        packages_to_be_installed:
+          - 'golang-github-prometheus-prometheus'
