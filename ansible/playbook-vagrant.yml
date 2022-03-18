@@ -1,6 +1,6 @@
 ---
 - name: 'Basic configuration for all nodes'
-  hosts: 'prometheus_nodes'
+  hosts: 'prometheus_nodes,prometheus_servers'
   gather_facts: 'yes'
   become: 'true'
 
