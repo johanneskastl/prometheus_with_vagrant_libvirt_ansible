@@ -53,7 +53,7 @@ Vagrant.configure("2") do |config|
       ansible.limit = "all"
       ansible.groups = {
         "prometheus_servers"  => [ "prometheus-server" ],
-        "prometheus_nodes"   => [ "prometheus-server", "prometheus-node1", "prometheus-node2" ]
+        "prometheus_nodes"   => [ "prometheus-node1", "prometheus-node2" ]
       }
       ansible.playbook = "ansible/playbook-vagrant.yml"
     end # node.vm.provision
