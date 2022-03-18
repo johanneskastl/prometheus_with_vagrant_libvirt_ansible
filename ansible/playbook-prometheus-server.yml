@@ -1,0 +1,8 @@
+---
+- name: 'Install prometheus server and configure it'
+  hosts: 'prometheus_servers'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'prometheus_server'
