@@ -1,4 +1,9 @@
 ---
+- name: 'Gather facts for all hosts'
+  hosts: 'all'
+  gather_facts: 'yes'
+  become: 'true'
+
 - name: 'Install prometheus server and configure it'
   hosts: 'prometheus_servers'
   gather_facts: 'yes'
