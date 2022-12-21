@@ -19,12 +19,5 @@
         additional_users: "{{ ansible_user }}"
     - role: 'prometheus_node_exporter'
 
-- name: 'Install prometheus server and configure it'
-  hosts: 'prometheus_servers'
-  gather_facts: 'yes'
-  become: 'true'
-
-  roles:
-    - role: 'prometheus_server'
-      vars:
-        additional_nodes: "{{ groups['prometheus_nodes'] | map('extract', hostvars, ['ansible_default_ipv4', 'address']) | list }}"
+- name: 'Run playbook-prometheus-server.yml'
+  import_playbook: playbook-prometheus-server.yml
