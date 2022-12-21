@@ -19,3 +19,4 @@
         - product: 'SLES'
           key: "{{ suse_license_key }}"
         - product: 'sle-module-basesystem'
+        - product: 'PackageHub'
