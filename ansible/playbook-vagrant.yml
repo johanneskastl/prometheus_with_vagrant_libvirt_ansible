@@ -1,23 +1,7 @@
 ---
-- name: 'Basic configuration for all nodes'
-  hosts: 'prometheus_nodes,prometheus_servers'
-  gather_facts: 'yes'
-  become: 'true'
 
-  roles:
-    - role: 'zypper_ref_accept_keys'
-    - role: 'install_one_or_more_packages'
-      vars:
-        packages_to_be_installed:
-          - 'vim-data'
-          - 'hostname'
-    - role: 'minimal_bashrc'
-      vars:
-        additional_users: "{{ ansible_user }}"
-    - role: 'create_a_vimrc'
-      vars:
-        additional_users: "{{ ansible_user }}"
-    - role: 'prometheus_node_exporter'
+- name: 'Run playbook-prometheus-nodes.yml'
+  import_playbook: playbook-prometheus-nodes.yml
 
 - name: 'Run playbook-prometheus-server.yml'
   import_playbook: playbook-prometheus-server.yml
