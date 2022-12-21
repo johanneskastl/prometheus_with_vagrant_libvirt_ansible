@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "prometheus-node#{i}" do |node|
 
       # which image to use
-      node.vm.box = "opensuse/Leap-15.4.x86_64"
+      node.vm.box = "SLE15-SP4"
 
       # sizing of the VMs
       node.vm.provider "libvirt" do |lv|
@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "prometheus-server" do |node|
 
     # which image to use
-    node.vm.box = "opensuse/Leap-15.4.x86_64"
+    node.vm.box = "SLE15-SP4"
 
     # sizing of the VMs
     node.vm.provider "libvirt" do |lv|
