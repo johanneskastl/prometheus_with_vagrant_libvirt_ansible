@@ -9,6 +9,4 @@
       packages_to_be_installed:
         - 'vim-data'
         - 'hostname'
-    - role: 'create_a_vimrc'
-      additional_users: "{{ ansible_user }}"
     - role: 'prometheus_node_exporter'
