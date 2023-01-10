@@ -3,6 +3,9 @@
 - name: 'Run 10_SLES_register.yml'
   import_playbook: 10_SLES_register.yml
 
+- name: 'Run playbook-all_nodes-zypper_ref_accept_keys.yml'
+  import_playbook: playbook-all_nodes-zypper_ref_accept_keys.yml
+
 - name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
   import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
 
