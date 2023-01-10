@@ -3,8 +3,8 @@
 - name: 'Run 10_SLES_register.yml'
   import_playbook: 10_SLES_register.yml
 
-- name: 'Run playbook-prometheus-nodes.yml'
-  import_playbook: playbook-prometheus-nodes.yml
+- name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
+  import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
 
 - name: 'Run playbook-prometheus-server.yml'
   import_playbook: playbook-prometheus-server.yml
