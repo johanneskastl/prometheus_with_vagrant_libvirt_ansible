@@ -7,14 +7,11 @@
   roles:
     - role: 'zypper_ref_accept_keys'
     - role: 'install_one_or_more_packages'
-      vars:
-        packages_to_be_installed:
-          - 'vim-data'
-          - 'hostname'
+      packages_to_be_installed:
+        - 'vim-data'
+        - 'hostname'
     - role: 'minimal_bashrc'
-      vars:
-        additional_users: "{{ ansible_user }}"
+      additional_users: "{{ ansible_user }}"
     - role: 'create_a_vimrc'
-      vars:
-        additional_users: "{{ ansible_user }}"
+      additional_users: "{{ ansible_user }}"
     - role: 'prometheus_node_exporter'
