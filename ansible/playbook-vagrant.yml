@@ -9,6 +9,9 @@
 - name: 'Run playbook-all_nodes-install_hostname.yml'
   import_playbook: playbook-all_nodes-install_hostname.yml
 
+- name: 'Run playbook-all_nodes-install_vim-data.yml'
+  import_playbook: playbook-all_nodes-install_vim-data.yml
+
 - name: 'Run playbook-all_nodes-minimal_bashrc.yml'
   import_playbook: playbook-all_nodes-minimal_bashrc.yml
 
