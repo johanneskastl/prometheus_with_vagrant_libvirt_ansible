@@ -9,6 +9,9 @@
 - name: 'Run playbook-all_nodes-minimal_bashrc.yml'
   import_playbook: playbook-all_nodes-minimal_bashrc.yml
 
+- name: 'Run playbook-all_nodes-create_a_vimrc.yml'
+  import_playbook: playbook-all_nodes-create_a_vimrc.yml
+
 - name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
   import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
 
