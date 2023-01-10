@@ -1,0 +1,12 @@
+---
+- name: 'Add the Prometheus_Grafana_SLES15 zypper repository'
+  hosts: 'all'
+  gather_facts: 'yes'
+  become: 'true'
+
+  roles:
+    - role: 'add_zypper_repository'
+      vars:
+        repository_name: 'home-ojkastl_buildservice-Prometheus_Grafana_SLES15'
+        repository_baseurl: "https://download.opensuse.org/repositories/home:/ojkastl_buildservice:/Prometheus_Grafana_SLES15/{{ ansible_distribution_version }}/"
+        auto_import_keys: '1'
