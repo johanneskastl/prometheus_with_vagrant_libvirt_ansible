@@ -1,5 +1,5 @@
 ---
-- name: 'Basic configuration for all nodes'
+- name: 'Install node_exporter on all nodes'
   hosts: 'all'
   gather_facts: 'yes'
   become: 'true'
