@@ -11,5 +11,4 @@
 
   roles:
     - role: 'prometheus_server'
-      vars:
-        additional_nodes: "{{ groups['prometheus_nodes'] | map('extract', hostvars, ['ansible_default_ipv4', 'address']) | list }}"
+      additional_nodes: "{{ groups['prometheus_nodes'] | map('extract', hostvars, ['ansible_default_ipv4', 'address']) | list }}"
