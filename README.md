@@ -4,6 +4,8 @@ This Vagrant setup creates a prometheus-server VM and two VMs as "nodes".
 
 It installs and starts the [node-exporter](https://github.com/prometheus/node_exporter) on all nodes, then installs and configures the [Prometheus server](https://github.com/prometheus/prometheus) to scrape metrics from all of the nodes.
 
+It also installs Grafana on the Prometheus server VM.
+
 Default OS is openSUSE Leap 15.4, but that can be changed in the Vagrantfile. Please beware, this might break the ansible provisioning which was only tested with openSUSE Leap 15.4.
 
 ## Vagrant
