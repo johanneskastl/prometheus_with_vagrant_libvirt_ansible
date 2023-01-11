@@ -28,3 +28,6 @@
 [submodule "ansible/roles/add_zypper_repository"]
 	path = ansible/roles/add_zypper_repository
 	url = https://github.com/johanneskastl/ansible-role-add_zypper_repository.git
+[submodule "ansible/roles/grafana_server"]
+	path = ansible/roles/grafana_server
+	url = https://github.com/johanneskastl/ansible-role-grafana_server.git
