@@ -26,3 +26,6 @@
 
 - name: 'Run playbook-prometheus-server.yml'
   import_playbook: playbook-prometheus-server.yml
+
+- name: 'Run playbook-prometheus-server-grafana_server.yml'
+  import_playbook: playbook-prometheus-server-grafana_server.yml
