@@ -25,7 +25,7 @@ In case you do not want Ansible to install prometheus (because you want to insta
       ansible.compatibility_mode = "2.0"
       ansible.limit = "all"
       ansible.groups = {
-        "prometheus_servers"  => [ "prometheus-server" ],
+        "prometheus_server"  => [ "prometheus-server" ],
         "prometheus_nodes"   => [ "prometheus-node1", "prometheus-node2" ]
       }
       ansible.playbook = "ansible/playbook-vagrant.yml"
@@ -47,7 +47,7 @@ You can modify the Vagrantfile to create additional agent nodes by tweaking two 
 2. Adding the additional nodes to the `ansible_groups` line:
 ```
       ansible.groups = {
-        "prometheus_servers"  => [ "prometheus-server" ],
+        "prometheus_server"  => [ "prometheus-server" ],
         "prometheus_nodes"   => [ "prometheus-node1", "prometheus-node2", "prometheus-node3" ]
       }
 ```
