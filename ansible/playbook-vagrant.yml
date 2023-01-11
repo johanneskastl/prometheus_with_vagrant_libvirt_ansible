@@ -24,8 +24,8 @@
 - name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
   import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
 
-- name: 'Run playbook-prometheus-server.yml'
-  import_playbook: playbook-prometheus-server.yml
+- name: 'Run playbook-prometheus-server-prometheus_server.yml'
+  import_playbook: playbook-prometheus-server-prometheus_server.yml
 
 - name: 'Run playbook-prometheus-server-grafana_server.yml'
   import_playbook: playbook-prometheus-server-grafana_server.yml
