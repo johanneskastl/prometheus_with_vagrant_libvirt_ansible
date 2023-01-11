@@ -52,12 +52,12 @@ Vagrant.configure("2") do |config|
       ansible.compatibility_mode = "2.0"
       ansible.limit = "all"
       ansible.groups = {
-        "prometheus_servers"  => [ "prometheus-server" ],
+        "prometheus_server"  => [ "prometheus-server" ],
         "prometheus_nodes"   => [ "prometheus-node1", "prometheus-node2" ]
       }
       ansible.playbook = "ansible/playbook-vagrant.yml"
     end # node.vm.provision
 
-  end # config.vm.define servers
+  end # config.vm.define server
 
 end # Vagrant.configure
