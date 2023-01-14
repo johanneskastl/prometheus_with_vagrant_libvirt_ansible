@@ -2,7 +2,7 @@
 - name: 'Install node_exporter on all nodes'
   hosts: 'all'
   gather_facts: true
-  become: 'true'
+  become: true
 
   roles:
     - role: 'prometheus_node_exporter'
