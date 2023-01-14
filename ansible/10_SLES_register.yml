@@ -14,8 +14,7 @@
 
   - role: 'b1-systems-ansible-role-suseconnect'
     when: 'ansible_distribution == "SLES" and ansible_distribution_major_version == "15"'
-    vars:
-      suseconnect_products:
-        - product: 'SLES'
-          key: "{{ suse_license_key }}"
-        - product: 'sle-module-basesystem'
+    suseconnect_products:
+      - product: 'SLES'
+        key: "{{ suse_license_key }}"
+      - product: 'sle-module-basesystem'
