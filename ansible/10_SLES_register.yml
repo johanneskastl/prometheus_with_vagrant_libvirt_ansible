@@ -5,7 +5,7 @@
 
   pre_tasks:
 
-    - name: 'fail if license key is empty'
+    - name: 'Fail if license key is empty'
       ansible.builtin.fail:
         msg: "License key variable suse_license_key is empty, have you set it in group_vars/all/SUSE_LICENSE_KEY.yml?"
       when: 'ansible_distribution == "SLES" and suse_license_key is undefined'
