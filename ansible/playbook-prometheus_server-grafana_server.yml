@@ -2,7 +2,7 @@
 
 - name: 'Install Grafana server and configure it'
   hosts: 'prometheus_server'
-  gather_facts: 'yes'
+  gather_facts: true
   become: 'true'
 
   roles:
