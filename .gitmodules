@@ -24,7 +24,7 @@
 	url = https://github.com/johanneskastl/ansible-role-prometheus_server.git
 [submodule "ansible/roles/b1-systems-ansible-role-suseconnect"]
 	path = ansible/roles/b1-systems-ansible-role-suseconnect
-	url = https://github.com/b1-systems/ansible-role-suseconnect.git
+	url = https://github.com/johanneskastl/ansible-role-suseconnect.git
 [submodule "ansible/roles/add_zypper_repository"]
 	path = ansible/roles/add_zypper_repository
 	url = https://github.com/johanneskastl/ansible-role-add_zypper_repository.git
