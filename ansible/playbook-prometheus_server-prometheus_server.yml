@@ -1,12 +1,12 @@
 ---
 - name: 'Gather facts for all hosts'
   hosts: 'all'
-  gather_facts: 'yes'
+  gather_facts: true
   become: 'true'
 
 - name: 'Install prometheus server and configure it'
   hosts: 'prometheus_server'
-  gather_facts: 'yes'
+  gather_facts: true
   become: 'true'
 
   roles:
