@@ -1,4 +1,5 @@
 ---
 
 collections:
+- community.general
 - johanneskastl.prometheus_grafana
