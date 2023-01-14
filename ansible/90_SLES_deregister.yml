@@ -1,5 +1,6 @@
 ---
-- hosts: 'all'
+- name: 'Unregister the system'
+  hosts: 'all'
   become: true
 
   roles:
