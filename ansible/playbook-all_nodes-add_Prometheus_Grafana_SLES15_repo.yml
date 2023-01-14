@@ -1,8 +1,8 @@
 ---
 - name: 'Add the Prometheus_Grafana_SLES15 zypper repository'
   hosts: 'all'
-  gather_facts: 'yes'
-  become: 'true'
+  gather_facts: true
+  become: true
 
   roles:
     - role: 'add_zypper_repository'
