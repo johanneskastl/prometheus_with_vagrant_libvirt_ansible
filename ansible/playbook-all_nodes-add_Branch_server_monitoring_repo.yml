@@ -1,0 +1,12 @@
+---
+- name: 'Add Branch_server_monitoring zypper repository'
+  hosts: 'all'
+  gather_facts: true
+  become: true
+
+  roles:
+    - role: 'add_zypper_repository'
+      vars:
+        repository_name: 'home-ojkastl_buildservice-Branch_server_monitoring'
+        repository_baseurl: 'https://download.opensuse.org/repositories/home:/ojkastl_buildservice:/Branch_server_monitoring/openSUSE_Tumbleweed_direct/'
+        auto_import_keys: '1'
