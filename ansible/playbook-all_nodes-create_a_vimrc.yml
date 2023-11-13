@@ -5,5 +5,5 @@
   become: true
 
   roles:
-    - role: 'create_a_vimrc'
+    - role: 'johanneskastl.create_a_vimrc'
       additional_users: "{{ ansible_user }}"
