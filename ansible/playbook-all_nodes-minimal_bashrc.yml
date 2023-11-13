@@ -5,5 +5,5 @@
   become: true
 
   roles:
-    - role: 'minimal_bashrc'
+    - role: 'johanneskastl.minimal_bashrc'
       additional_users: "{{ ansible_user }}"
