@@ -6,4 +6,4 @@
   become: true
 
   roles:
-    - role: 'grafana_server'
+    - role: 'johanneskastl.grafana_server'
