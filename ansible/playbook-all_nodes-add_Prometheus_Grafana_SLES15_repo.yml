@@ -5,7 +5,7 @@
   become: true
 
   roles:
-    - role: 'add_zypper_repository'
+    - role: 'johanneskastl.add_zypper_repository'
       vars:
         repository_name: 'home-ojkastl_buildservice-Prometheus_Grafana_SLES15'
         repository_baseurl: "https://download.opensuse.org/repositories/home:/ojkastl_buildservice:/Prometheus_Grafana_SLES15/{{ ansible_distribution_version }}/"
