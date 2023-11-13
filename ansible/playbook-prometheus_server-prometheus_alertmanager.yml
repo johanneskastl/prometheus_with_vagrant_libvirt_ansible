@@ -1,0 +1,8 @@
+---
+- name: 'Install the Prometheus Alertmanager and configure it'
+  hosts: 'prometheus_server'
+  gather_facts: true
+  become: true
+
+  roles:
+    - role: 'johanneskastl.prometheus_alertmanager'
