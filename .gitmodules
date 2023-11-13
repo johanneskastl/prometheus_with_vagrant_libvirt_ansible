@@ -34,3 +34,6 @@
 [submodule "ansible/roles/johanneskastl.prometheus_node_exporter"]
 	path = ansible/roles/johanneskastl.prometheus_node_exporter
 	url = https://github.com/johanneskastl/ansible-role-prometheus_node_exporter.git
+[submodule "ansible/roles/johanneskastl.grafana_server"]
+	path = ansible/roles/johanneskastl.grafana_server
+	url = https://github.com/johanneskastl/ansible-role-grafana_server.git
