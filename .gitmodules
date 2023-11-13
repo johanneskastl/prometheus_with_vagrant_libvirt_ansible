@@ -22,9 +22,6 @@
 [submodule "ansible/roles/b1-systems-ansible-role-suseconnect"]
 	path = ansible/roles/b1-systems-ansible-role-suseconnect
 	url = https://github.com/johanneskastl/ansible-role-suseconnect.git
-[submodule "ansible/roles/grafana_server"]
-	path = ansible/roles/grafana_server
-	url = https://github.com/johanneskastl/ansible-role-grafana_server.git
 [submodule "ansible/roles/johanneskastl.reboot"]
 	path = ansible/roles/johanneskastl.reboot
 	url = https://github.com/johanneskastl/ansible-role-reboot.git
