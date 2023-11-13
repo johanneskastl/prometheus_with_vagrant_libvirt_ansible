@@ -25,3 +25,6 @@
 [submodule "ansible/roles/johanneskastl.minimal_tmux_configuration"]
 	path = ansible/roles/johanneskastl.minimal_tmux_configuration
 	url = https://github.com/johanneskastl/ansible-role-minimal_tmux_configuration.git
+[submodule "ansible/roles/johanneskastl.zypper_ref_accept_keys"]
+	path = ansible/roles/johanneskastl.zypper_ref_accept_keys
+	url = https://github.com/johanneskastl/ansible-role-zypper_ref_accept_keys.git
