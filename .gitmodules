@@ -28,3 +28,6 @@
 [submodule "ansible/roles/johanneskastl.zypper_ref_accept_keys"]
 	path = ansible/roles/johanneskastl.zypper_ref_accept_keys
 	url = https://github.com/johanneskastl/ansible-role-zypper_ref_accept_keys.git
+[submodule "ansible/roles/johanneskastl.prometheus_server"]
+	path = ansible/roles/johanneskastl.prometheus_server
+	url = https://github.com/johanneskastl/ansible-role-prometheus_server.git
