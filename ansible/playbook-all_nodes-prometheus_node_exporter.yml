@@ -5,4 +5,4 @@
   become: true
 
   roles:
-    - role: 'prometheus_node_exporter'
+    - role: 'johanneskastl.prometheus_node_exporter'
