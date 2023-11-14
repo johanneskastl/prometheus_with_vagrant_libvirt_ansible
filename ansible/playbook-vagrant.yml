@@ -24,6 +24,9 @@
 - name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
   import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
 
+- name: 'Run playbook-prometheus_server-prometheus_alertmanager.yml'
+  import_playbook: playbook-prometheus_server-prometheus_alertmanager.yml
+
 - name: 'Run playbook-prometheus_server-prometheus_server.yml'
   import_playbook: playbook-prometheus_server-prometheus_server.yml
 
