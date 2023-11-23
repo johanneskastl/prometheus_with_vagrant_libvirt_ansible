@@ -11,7 +11,7 @@
 
   roles:
     - role: 'johanneskastl.prometheus_server'
-      additional_nodes: "{{ groups['prometheus_nodes'] | map('extract', hostvars, ['ansible_default_ipv4', 'address']) | list }}"
+      additional_nodes: "{{ groups['prometheus_nodes'] | map('extract', hostvars, ['inventory_hostname']) | list }}"
       enable_alertmanager: true
       copy_alert_rules_files: true
       alert_rules_files:
