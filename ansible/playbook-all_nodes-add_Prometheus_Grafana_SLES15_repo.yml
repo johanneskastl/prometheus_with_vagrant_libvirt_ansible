@@ -6,7 +6,9 @@
 
   roles:
     - role: 'johanneskastl.add_zypper_repository'
-      vars:
-        repository_name: 'home-ojkastl_buildservice-Prometheus_Grafana_SLES15'
-        repository_baseurl: "https://download.opensuse.org/repositories/home:/ojkastl_buildservice:/Prometheus_Grafana_SLES15/{{ ansible_distribution_version }}/"
-        auto_import_keys: '1'
+      repository_name: 'home-ojkastl_buildservice-Prometheus_Grafana_SLES15'
+      repository_baseurl: "https://download.opensuse.org/repositories/home:/ojkastl_buildservice:/Prometheus_Grafana_SLES15/{{ ansible_distribution_version }}/"
+      auto_import_keys: '1'
+      when:
+        - 'ansible_distribution == "openSUSE Leap"'
+        - 'ansible_distribution == "SLES"'

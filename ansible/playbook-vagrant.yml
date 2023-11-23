@@ -9,17 +9,23 @@
 - name: 'Run playbook-all_nodes-zypper_ref_accept_keys.yml'
   import_playbook: playbook-all_nodes-zypper_ref_accept_keys.yml
 
+- name: 'Run playbook-all_nodes-update_debian_ubuntu_sources.yml'
+  import_playbook: playbook-all_nodes-update_debian_ubuntu_sources.yml
+
 - name: 'Run playbook-all_nodes-install_hostname.yml'
   import_playbook: playbook-all_nodes-install_hostname.yml
-
-- name: 'Run playbook-all_nodes-install_vim-data.yml'
-  import_playbook: playbook-all_nodes-install_vim-data.yml
 
 - name: 'Run playbook-all_nodes-minimal_bashrc.yml'
   import_playbook: playbook-all_nodes-minimal_bashrc.yml
 
+- name: 'Run playbook-all_nodes-minimal_tmux_configuration.yml'
+  import_playbook: playbook-all_nodes-minimal_tmux_configuration.yml
+
 - name: 'Run playbook-all_nodes-create_a_vimrc.yml'
   import_playbook: playbook-all_nodes-create_a_vimrc.yml
+
+- name: 'Run playbook-all_nodes-add_all_nodes_to_etc_hosts.yml'
+  import_playbook: playbook-all_nodes-add_all_nodes_to_etc_hosts.yml
 
 - name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
   import_playbook: playbook-all_nodes-prometheus_node_exporter.yml

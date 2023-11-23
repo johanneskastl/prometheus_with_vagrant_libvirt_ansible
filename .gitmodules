@@ -40,3 +40,9 @@
 [submodule "ansible/roles/johanneskastl.prometheus_alertmanager"]
 	path = ansible/roles/johanneskastl.prometheus_alertmanager
 	url = https://github.com/johanneskastl/ansible-role-prometheus_alertmanager.git
+[submodule "ansible/roles/johanneskastl.update_debian_ubuntu_sources"]
+	path = ansible/roles/johanneskastl.update_debian_ubuntu_sources
+	url = https://github.com/johanneskastl/ansible-role-update_debian_ubuntu_sources.git
+[submodule "ansible/roles/johanneskastl.add_all_nodes_to_etc_hosts"]
+	path = ansible/roles/johanneskastl.add_all_nodes_to_etc_hosts
+	url = https://github.com/johanneskastl/ansible-role-add_all_nodes_to_etc_hosts.git

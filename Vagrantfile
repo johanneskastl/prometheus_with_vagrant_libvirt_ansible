@@ -13,6 +13,9 @@ Vagrant.configure("2") do |config|
       # which image to use
       node.vm.box = "opensuse/Tumbleweed.x86_64"
 
+      # disable synced folders
+      node.vm.synced_folder ".", "/vagrant", disabled: true
+
       # sizing of the VMs
       node.vm.provider "libvirt" do |lv|
         lv.random_hostname = true
@@ -34,6 +37,9 @@ Vagrant.configure("2") do |config|
 
     # which image to use
     node.vm.box = "opensuse/Tumbleweed.x86_64"
+
+    # disable synced folders
+    node.vm.synced_folder ".", "/vagrant", disabled: true
 
     # sizing of the VMs
     node.vm.provider "libvirt" do |lv|
