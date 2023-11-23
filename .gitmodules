@@ -40,3 +40,6 @@
 [submodule "ansible/roles/johanneskastl.prometheus_alertmanager"]
 	path = ansible/roles/johanneskastl.prometheus_alertmanager
 	url = https://github.com/johanneskastl/ansible-role-prometheus_alertmanager.git
+[submodule "ansible/roles/johanneskastl.update_debian_ubuntu_sources"]
+	path = ansible/roles/johanneskastl.update_debian_ubuntu_sources
+	url = https://github.com/johanneskastl/ansible-role-update_debian_ubuntu_sources.git
