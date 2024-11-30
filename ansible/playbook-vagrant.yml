@@ -8,13 +8,6 @@
   ansible.builtin.import_playbook: playbook-all_nodes-bootstrap_python.yml
 
 #
-# Register SLES
-#
-
-- name: 'Run 10_SLES_register.yml'
-  import_playbook: 10_SLES_register.yml
-
-#
 # general configuration
 #
 
