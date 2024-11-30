@@ -53,3 +53,6 @@
 
 - name: 'Run playbook-prometheus_server-grafana_server.yml'
   ansible.builtin.import_playbook: playbook-prometheus_server-grafana_server.yml
+
+- name: 'Run playbook-prometheus_server-output_urls.yml'
+  ansible.builtin.import_playbook: playbook-prometheus_server-output_urls.yml
