@@ -1,5 +1,9 @@
 ---
 
+#
+# Register SLES
+#
+
 - name: 'Run 10_SLES_register.yml'
   import_playbook: 10_SLES_register.yml
 
