@@ -16,3 +16,15 @@ Default OS is openSUSE Leap 15.6, but that can be changed in the Vagrantfile. Pl
 4. Run `vagrant up`
 5. Find out the IP address of the prometheus-server, open it in a browser using port 9090 and you should see the Prometheus UI. You should find all nodes in `Status` => `Targets`
 6. Party!
+
+## Cleaning up
+
+The VMs can be torn down after playing around using `vagrant destroy`.
+
+## License
+
+BSD-3-Clause
+
+## Author Information
+
+I am Johannes Kastl, reachable via git@johannes-kastl.de
