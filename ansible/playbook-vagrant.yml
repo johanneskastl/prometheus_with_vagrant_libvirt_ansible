@@ -7,18 +7,6 @@
 - name: 'Run 10_SLES_register.yml'
   import_playbook: 10_SLES_register.yml
 
-- name: 'Run playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml'
-  import_playbook: playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml
-
-- name: 'Run playbook-all_nodes-zypper_ref_accept_keys.yml'
-  import_playbook: playbook-all_nodes-zypper_ref_accept_keys.yml
-
-- name: 'Run playbook-all_nodes-update_debian_ubuntu_sources.yml'
-  import_playbook: playbook-all_nodes-update_debian_ubuntu_sources.yml
-
-- name: 'Run playbook-all_nodes-install_hostname.yml'
-  import_playbook: playbook-all_nodes-install_hostname.yml
-
 - name: 'Run playbook-all_nodes-minimal_bashrc.yml'
   import_playbook: playbook-all_nodes-minimal_bashrc.yml
 
@@ -31,6 +19,18 @@
 #
 # Prometheus
 #
+
+- name: 'Run playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml'
+  import_playbook: playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml
+
+- name: 'Run playbook-all_nodes-zypper_ref_accept_keys.yml'
+  import_playbook: playbook-all_nodes-zypper_ref_accept_keys.yml
+
+- name: 'Run playbook-all_nodes-update_debian_ubuntu_sources.yml'
+  import_playbook: playbook-all_nodes-update_debian_ubuntu_sources.yml
+
+- name: 'Run playbook-all_nodes-install_hostname.yml'
+  import_playbook: playbook-all_nodes-install_hostname.yml
 
 - name: 'Run playbook-all_nodes-add_all_nodes_to_etc_hosts.yml'
   import_playbook: playbook-all_nodes-add_all_nodes_to_etc_hosts.yml
