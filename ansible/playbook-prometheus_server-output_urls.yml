@@ -1,0 +1,29 @@
+---
+
+- name: 'Output the URLs'
+  hosts: 'prometheus_server'
+  gather_facts: true
+  become: false
+
+  tasks:
+
+    - name: 'Output Prometheus node-exporter URL'
+      delegate_to: 'localhost'
+      ansible.builtin.debug:
+        msg: >-
+          You can access the Prometheus node-exporter here:
+          http://{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}:9100
+
+    - name: 'Output Prometheus URL'
+      delegate_to: 'localhost'
+      ansible.builtin.debug:
+        msg: >-
+          You can access the Prometheus UI here:
+          http://{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}:9090
+
+    - name: 'Output Grafana URL'
+      delegate_to: 'localhost'
+      ansible.builtin.debug:
+        msg: >-
+          You can access Grafana here:
+          http://{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }}:3000
