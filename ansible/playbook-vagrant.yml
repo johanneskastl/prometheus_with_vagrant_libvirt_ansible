@@ -7,6 +7,10 @@
 - name: 'Run 10_SLES_register.yml'
   import_playbook: 10_SLES_register.yml
 
+#
+# general configuration
+#
+
 - name: 'Run playbook-all_nodes-minimal_bashrc.yml'
   import_playbook: playbook-all_nodes-minimal_bashrc.yml
 
