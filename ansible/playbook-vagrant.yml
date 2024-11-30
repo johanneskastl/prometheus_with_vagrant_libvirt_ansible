@@ -28,28 +28,28 @@
 #
 
 - name: 'Run playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml'
-  import_playbook: playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml
+  ansible.builtin.import_playbook: playbook-all_nodes-add_Prometheus_Grafana_SLES15_repo.yml
 
 - name: 'Run playbook-all_nodes-zypper_ref_accept_keys.yml'
-  import_playbook: playbook-all_nodes-zypper_ref_accept_keys.yml
+  ansible.builtin.import_playbook: playbook-all_nodes-zypper_ref_accept_keys.yml
 
 - name: 'Run playbook-all_nodes-update_debian_ubuntu_sources.yml'
-  import_playbook: playbook-all_nodes-update_debian_ubuntu_sources.yml
+  ansible.builtin.import_playbook: playbook-all_nodes-update_debian_ubuntu_sources.yml
 
 - name: 'Run playbook-all_nodes-install_hostname.yml'
-  import_playbook: playbook-all_nodes-install_hostname.yml
+  ansible.builtin.import_playbook: playbook-all_nodes-install_hostname.yml
 
 - name: 'Run playbook-all_nodes-add_all_nodes_to_etc_hosts.yml'
-  import_playbook: playbook-all_nodes-add_all_nodes_to_etc_hosts.yml
+  ansible.builtin.import_playbook: playbook-all_nodes-add_all_nodes_to_etc_hosts.yml
 
 - name: 'Run playbook-all_nodes-prometheus_node_exporter.yml'
-  import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
+  ansible.builtin.import_playbook: playbook-all_nodes-prometheus_node_exporter.yml
 
 - name: 'Run playbook-prometheus_server-prometheus_alertmanager.yml'
-  import_playbook: playbook-prometheus_server-prometheus_alertmanager.yml
+  ansible.builtin.import_playbook: playbook-prometheus_server-prometheus_alertmanager.yml
 
 - name: 'Run playbook-prometheus_server-prometheus_server.yml'
-  import_playbook: playbook-prometheus_server-prometheus_server.yml
+  ansible.builtin.import_playbook: playbook-prometheus_server-prometheus_server.yml
 
 - name: 'Run playbook-prometheus_server-grafana_server.yml'
-  import_playbook: playbook-prometheus_server-grafana_server.yml
+  ansible.builtin.import_playbook: playbook-prometheus_server-grafana_server.yml
